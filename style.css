@@ -16,18 +16,11 @@
   }
 
 .goToTopdisplay{
-  animation-name: showGoToTop;
-  animation-duration: .4s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
+  animation: showGoToTop .4s ease-in 1;
 }
 
 .goToTophide{
-  animation-name: showGoToTop;
-  animation-duration: .4s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-direction: reverse;
+  animation: showGoToTop .4s ease-in 1 reverse;
 }
 
 @keyframes showGoToTop {
