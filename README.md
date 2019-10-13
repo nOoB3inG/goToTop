@@ -1,4 +1,4 @@
-# goToTop Button
+# goToTop Plugin
 JavaScript for Go to top Button.
 
 Instructions: 
