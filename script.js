@@ -1,6 +1,5 @@
 // Create div with id ="goToTop"
-
-var view = {
+let view = {
 
     setUpEventListener: function() {
         this.displayScroll();   //Display Scroll Button after specific height.
@@ -8,11 +7,11 @@ var view = {
     },
 
     displayScroll: function() {
-      var goToTop = document.getElementById('goToTop');
-      window.addEventListener('scroll', function()
+      let goToTop = document.getElementById('goToTop');
+      window.addEventListener('scroll', () =>
       {
-        var offSetY = window.scrollY;   // Scroll Y Pos.
-        var viewHeight = window.innerHeight;  // Size of the Browser Window
+        let offSetY = window.scrollY;   // Scroll Y Pos.
+        let viewHeight = window.innerHeight;  // Size of the Browser Window
         viewHeight /= 2;        // Divide viewHeight 
 
         if(offSetY >= viewHeight)
@@ -29,11 +28,8 @@ var view = {
 
     goToTopClick: function()
     {
-      var goToTop = document.getElementById('goToTop');
-      goToTop.addEventListener('click',function()
-      {
-        window.scrollTo(0,0);
-      });
+      let goToTop = document.getElementById('goToTop');
+      goToTop.addEventListener('click',() => window.scrollTo(0,0));
     }
 
   }
